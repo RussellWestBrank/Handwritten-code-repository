@@ -11,7 +11,7 @@ function bar(name, age) {
 bar.apply(foo, ['wqq'])
 
 //手写实现
-Function.prototype.myApply= (context,agrs) => {
+Function.prototype.myApply= (context,args) => {
     if(context === null || context === undefined){
         context = window
     }

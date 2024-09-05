@@ -33,3 +33,9 @@ Function.prototype.myBind = function (context) {
         return self.apply(context, args.concat(bindArgs))
     }
 }
+ /**
+   * 总结
+   * 1. bind返回一个函数
+   * 2. 函数的this会丢失，所以需要先保存
+   * 3. 利用apply或者call完成绑定
+   */

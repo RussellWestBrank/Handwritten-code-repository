@@ -46,10 +46,10 @@ function Person(name, age) {
 //返回其他类型，相当于没有返回值进行处理
 // 最终版的代码
 function objectFactory() {
-    var obj = new Object(),
+    let obj = new Object(),
     Constructor = [].shift.call(arguments);
     obj.__proto__ = Constructor.prototype;
-    var ret = Constructor.apply(obj, arguments);
+    let ret = Constructor.apply(obj, arguments);
     return typeof ret === 'object' ? ret : obj;
 
 };

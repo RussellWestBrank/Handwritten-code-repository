@@ -76,3 +76,12 @@ Function.prototype.myCall2 = function(context){
   //    name: 'kevin',
   //    age: 18
   // }
+
+  /**
+   * 总结
+   * obj = {
+   *  fn: bar
+   * }
+   * obj.fn
+   * 将需要改变指向的函数，赋值至提供上下文的对象
+   */
